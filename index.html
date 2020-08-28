@@ -3,25 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My first three.js app</title>
+  <title>3D Models</title>
   <style>
     body {
       margin: 0;
+      overflow: hidden;
+      background: #999999
     }
 
-    canvas {
-      display: block;
+    canvas,
+    .scene {
+      position: absolute;
+      width: 100%;
+      height: 100%;
     }
+
   </style>
 </head>
 
 <body>
-  <script src="js/three.js"></script>
-  <script src="js/vendor.js"></script>
-  <script>
-      // Our Javascript will go here.
 
-  </script>
+  <div class="scene"></div>
+
+  <script src="js/three.js"></script>
+  <!-- <script src="js/OrbitControls.js"></script> -->
+  <script src="js/GLTFLoader.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
